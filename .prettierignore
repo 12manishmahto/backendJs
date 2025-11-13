@@ -1,0 +1,27 @@
+# Don't format dependencies
+node_modules/
+
+# Don't format build output
+dist/
+build/
+out/
+
+# Don't format environment or configuration files
+.env
+.env.*
+package-lock.json
+
+# Ignore version control folders
+.git/
+.github/
+
+# Ignore system or editor settings
+.vscode/
+.idea/
+
+# Ignore any temporary or log files
+*.log
+*.tmp
+
+# Optional: ignore your public assets (if any)
+public/
