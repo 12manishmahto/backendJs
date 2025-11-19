@@ -5,7 +5,7 @@ import { app } from './app.js';
 dotenv.config({
     path: './env'
 })
-console.log(process.env)
+// console.log(process.env)
 
 connectDB()
     .then(() => {
@@ -45,4 +45,4 @@ const app = express()
             throw error
         }
     })()
-        */
+ */
