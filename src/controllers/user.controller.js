@@ -224,7 +224,7 @@ const changedCurrentPassword = asyncHandler(async (req, res) => {
 const getCurrentUser = asyncHandler(async (req, res) => {
     return res
         .status(200)
-        .json(200, req.user, "Current user fetched successfully")
+        .json(new ApiResponse(200, req.user, "user fetched successfully"))
 })
 
 const updateAccountDetails = asyncHandler(async (req, res) => {
@@ -247,7 +247,7 @@ const updateAccountDetails = asyncHandler(async (req, res) => {
 
     return res
         .status(200)
-        .json(200, user, "account details updated successfully")
+        .json(new ApiResponse(200, user, "account details updated successfully"))
 
 })
 
@@ -275,7 +275,7 @@ const updateUserAvatar = asyncHandler(async (req, res) => {
 
     return res
         .status(200)
-        .json(200, user, "avatar updated successfully ")
+        .json(new ApiResponse(200, user, "avatar updated successfully "))
 })
 
 const updateUserCoverImage = asyncHandler(async (req, res) => {
@@ -302,7 +302,7 @@ const updateUserCoverImage = asyncHandler(async (req, res) => {
 
     return res
         .status(200)
-        .json(200, user, "cover image updated successfully ")
+        .json(new ApiResponse(200, user, "cover image updated successfully "))
 })
 
 
